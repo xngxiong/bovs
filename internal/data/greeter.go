@@ -1,9 +1,8 @@
 package data
 
 import (
-	"context"
-
 	"bovs/internal/biz"
+	"context"
 
 	"github.com/go-kratos/kratos/v2/log"
 )
@@ -29,7 +28,7 @@ func (r *greeterRepo) Update(ctx context.Context, g *biz.Greeter) (*biz.Greeter,
 	return g, nil
 }
 
-func (r *greeterRepo) FindByID(context.Context, int64) (*biz.Greeter, error) {
+func (r *greeterRepo) FindByID(ctx context.Context, code int64) (*biz.Greeter, error) {
 	return nil, nil
 }
 
